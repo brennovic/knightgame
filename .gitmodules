@@ -1,0 +1,3 @@
+[submodule "gameknight"]
+	path = gameknight
+	url = https://github.com/yMatheusFernandes/game-knight-.git
