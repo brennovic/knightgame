@@ -1,4 +1,7 @@
-// Evento Create da arma
-recoil_distance = 10;    // Distância de recuo
-recoil_speed = 1;        // Velocidade de retorno após o recuo
-recoil_timer = 0;        // Temporizador de recuo
+
+recoil_distance = 10;    
+recoil_speed = 1;      
+recoil_timer = 0;      
+fire_rate = 5; 
+fire_timer = 0; 
+

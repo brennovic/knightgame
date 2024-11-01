@@ -6,8 +6,8 @@ if (!instance_exists(oPlayer)) {
 }
 
 // Atualiza a posição da arma em relação ao jogador
-x = oPlayer.x ;
-y = oPlayer.y ;
+x = oPlayer.x;
+y = oPlayer.y;
 
 // Calcula o ângulo da arma em relação à posição do mouse
 image_angle = point_direction(oPlayer.x, oPlayer.y, mouse_x, mouse_y);
@@ -15,8 +15,13 @@ image_angle = point_direction(oPlayer.x, oPlayer.y, mouse_x, mouse_y);
 // Ajusta a escala vertical para que a arma espelhe corretamente
 image_yscale = (image_angle > 90 && image_angle < 270) ? -1 : 1;
 
-// Verifica se o botão esquerdo do mouse foi pressionado
-if (mouse_check_button_pressed(mb_left)) {
+// Controla a taxa de disparo
+if (fire_timer > 0) {
+    fire_timer -= 1;
+}
+
+// Verifica se o botão esquerdo do mouse está pressionado e se o temporizador de disparo terminou
+if (mouse_check_button(mb_left) && fire_timer <= 0) {
     // Define a distância à frente da arma onde a bala será criada
     var offset = 10; // Ajuste conforme necessário
 
@@ -36,6 +41,9 @@ if (mouse_check_button_pressed(mb_left)) {
 
     // Toca o som da arma
     audio_play_sound(snd_guun, 1, false);
+
+    // Reinicia o temporizador de disparo
+    fire_timer = fire_rate; // Defina fire_rate no Create Event
 }
 
 // Reduz o recuo gradualmente
@@ -47,3 +55,4 @@ if (recoil_timer > 0) {
         recoil_timer = 0;
     }
 }
+

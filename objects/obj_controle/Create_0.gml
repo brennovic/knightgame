@@ -1,6 +1,5 @@
 
 
-
 global.p_sys = part_system_create();
 part_system_depth(global.p_sys, -100); 
 
@@ -12,3 +11,4 @@ part_type_colour3(global.particle_death, c_red, c_orange, c_yellow); // Transiç
 part_type_alpha3(global.particle_death, 1, 0.5, 0); // Transparência gradual
 part_type_speed(global.particle_death, 2, 4, -0.1, 0); // Velocidade
 part_type_direction(global.particle_death, 0, 360, 0, 0); // Direção aleatória
+
