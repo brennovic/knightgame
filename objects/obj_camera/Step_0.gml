@@ -21,5 +21,7 @@ if (instance_exists(target)) {
     target = noone;
 }
 
+
+
 // Limita o valor do zoom ao intervalo permitido
 target_zoom = clamp(target_zoom, min_zoom, max_zoom);

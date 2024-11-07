@@ -64,3 +64,17 @@ part_system_depth(part_sistema, depth + 1); // Ajusta a profundidade para logo a
 // Configura a região do emissor para emitir partículas nos "pés" do personagem
 altura_do_personagem = 6;  // Defina a altura dos pés
 part_emitter_region(part_sistema, emissor, x - 4, x + 4, y + altura_do_personagem, y + altura_do_personagem, ps_shape_ellipse, ps_distr_gaussian);
+
+
+
+
+
+
+
+
+// Teste para verificar se o controle está conectado
+if (gamepad_is_connected(0)) {
+    show_message("Controle 1 conectado!");
+} else {
+    show_message("Nenhum controle conectado.");
+}
