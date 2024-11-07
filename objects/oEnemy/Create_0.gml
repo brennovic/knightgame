@@ -1,4 +1,6 @@
 
+flash_timer = 0;
+
 
 target = oPlayer; 
 vida = 100;   

@@ -4,3 +4,4 @@ if (variable_global_exists("particle_death")) {
     part_particles_create(global.p_sys, x, y, global.particle_death, particle_count);
 }
 
+

@@ -1,4 +1,5 @@
-// Código no evento de Colisão: obj_enemy - obj_player
+if(visible == true){
 instance_destroy(oPlayer);
-room_goto(rm_menu); // rm_gameover é um exemplo, substitua pelo nome da room desejada.
+room_goto(rm_menu);
 game_restart();
+}

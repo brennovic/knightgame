@@ -21,5 +21,5 @@
   "sampleRate":44100,
   "soundFile":"som_dano2.mp3",
   "type":0,
-  "volume":1.0,
+  "volume":0.3,
 }

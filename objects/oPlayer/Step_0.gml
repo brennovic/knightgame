@@ -29,15 +29,20 @@ if (is_sliding) {
         y = new_y;
     }
 
-   
+    // Ajusta a rotação do sprite para apontar na direção exata do slide
+    if (xMove != 0 || yMove != 0) {
+        image_angle = point_direction(0, 0, xMove, yMove);
+        image_xscale = 1;  
+		image_yscale = (image_angle > 90 && image_angle < 270) ? -1 : 1;
+    }
 
     // Termina o slide quando a velocidade fica baixa
     if (slide_speed < 0.9) {
         is_sliding = false;
-        slide_speed = 3;  // Redefine a velocidade para caminhar
-
-        // Retorna ao sprite normal ao finalizar o slide
+        slide_speed = 3;  
         sprite_index = idle_sprite;
+        image_angle = 0;
+		image_yscale = 1
     }
 } else {
     // Movimento normal com colisão com todos os objetos (se não estiver deslizando)
@@ -57,11 +62,11 @@ if (is_sliding) {
     } else {
         sprite_index = idle_sprite;
     }
-}
 
-// Espelha o personagem baseado na direção de movimento
-if (xMove != 0) {
-    image_xscale = sign(xMove);
+    // Espelha o personagem na direção do movimento horizontal
+    if (xMove != 0) {
+        image_xscale = sign(xMove);
+    }
 }
 
 // Atualiza o cooldown do slide
@@ -76,4 +81,23 @@ if (keyboard_check_pressed(vk_space) && !is_sliding && dash_cooldown_timer <= 0)
     slide_speed = 8;  // Define a velocidade inicial do slide
     audio_play_sound(dash_som, 1, false);
 }
+
+
+
+// Atualiza a posição do emissor para a posição dos "pés" do personagem
+part_emitter_region(part_sistema, emissor, x - 4, x + 4, y + altura_do_personagem, y + altura_do_personagem, ps_shape_ellipse, ps_distr_gaussian);
+
+
+if (xMove != 0 || yMove != 0) {  
+    part_emitter_burst(part_sistema, emissor, part_tipo, 1); 
+}
+
+
+
+
+
+
+
+
+
 

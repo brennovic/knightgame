@@ -5,6 +5,8 @@ if (hit) {
     y += irandom_range(-1, 1);
 }
 
+
+
 // Verifica se o jogador existe na sala
 if (instance_exists(oPlayer)) {
     // Calcula a direção para o jogador
@@ -52,3 +54,9 @@ if (place_meeting(x, y, obj_wall)) {
     direction += 180; // Inverte a direção para impedir passagem pela parede
     motion_set(direction, 1); 
 }
+
+// No evento Step do inimigo
+if (flash_timer > 0) {
+    flash_timer -= 1;
+}
+
