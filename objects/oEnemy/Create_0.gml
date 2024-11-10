@@ -3,8 +3,10 @@ flash_timer = 0;
 
 
 target = oPlayer; 
-vida = 100;   
-vida_maxima = 100;
+vida = 50;   
+vida_maxima = 50;
 
 hit = false; 
 hit_timer = 0; 
+
+

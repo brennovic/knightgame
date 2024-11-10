@@ -34,5 +34,5 @@
     "path":"sprites/cave/cave.yy",
   },
   "spriteMaskId":null,
-  "visible":true,
+  "visible":false,
 }

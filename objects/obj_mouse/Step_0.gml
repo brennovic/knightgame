@@ -1,7 +1,7 @@
 // Configuração da velocidade do cursor
 var cursor_speed = 10;
 var cursor_sensitivity = 5; 
-var smoothing_factor = 2;  
+var smoothing_factor = 3;  
 
 // Verifica se o controle está conectado
 if (gamepad_is_connected(0)) {

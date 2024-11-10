@@ -30,6 +30,14 @@ if(!surface_exists(surf)){
 	gpu_set_blendmode(bm_normal)
 	
 	}
+	with(bazkground){
+		
+	gpu_set_blendmode(bm_subtract)
+	
+	draw_sprite_ext(sprite_index,image_index,x,y,image_xscale,image_yscale,image_angle,c_white,1)
+	
+	gpu_set_blendmode(bm_normal)
+	}
 	
 	surface_reset_target()
 	

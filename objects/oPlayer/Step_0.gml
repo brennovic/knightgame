@@ -90,3 +90,22 @@ part_emitter_region(part_sistema, emissor, x - 4, x + 4, y + altura_do_personage
 if (xMove != 0 || yMove != 0) {
     part_emitter_burst(part_sistema, emissor, part_tipo, 1);
 }
+
+
+
+// No evento Step do objeto oPlayer
+if (timer_active) {
+    // Incrementa o tempo decorrido em segundos
+    time_elapsed += delta_time / 1000000;
+
+    // A cada segundo completo, subtrai a penalidade da pontuação
+    if (floor(time_elapsed) > floor(time_elapsed - delta_time / 1000000)) {
+        score -= time_penalty;
+    }
+
+    // Garante que a pontuação não fique abaixo de zero
+    if (score < 0) {
+        score = 0;
+    }
+}
+

@@ -66,15 +66,8 @@ altura_do_personagem = 6;  // Defina a altura dos pés
 part_emitter_region(part_sistema, emissor, x - 4, x + 4, y + altura_do_personagem, y + altura_do_personagem, ps_shape_ellipse, ps_distr_gaussian);
 
 
-
-
-
-
-
-
-// Teste para verificar se o controle está conectado
-if (gamepad_is_connected(0)) {
-    show_message("Controle 1 conectado!");
-} else {
-    show_message("Nenhum controle conectado.");
-}
+score = 100;
+time_elapsed = 0;
+time_penalty = 1;
+timer_active = true;
+show_score_window = false;  // Flag para exibir a janela de pontuação
