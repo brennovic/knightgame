@@ -10,9 +10,17 @@ if (variable_global_exists("particle_death")) {
 
 
 // Checa se 5 inimigos foram destruídos
+if (global.enemy_kills >= 7) {
+   
+    obj_wave_2.active = true}
+
+// Checa se 5 inimigos foram destruídos
 if (global.enemy_kills >= 3) {
-    // Destrói a parede (obj_wall)
-    with (parede) {
-        instance_destroy();
-    }
+    obj_wave_1.active = true
+    
+}
+
+
+if global.life<=0 {
+ instance_destroy(oEnemy)
 }

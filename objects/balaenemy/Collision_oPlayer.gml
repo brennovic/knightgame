@@ -12,8 +12,11 @@ if (!other.is_sliding) {
         // If life is zero or less, handle game over
         if (global.life <= 0) {
             instance_destroy();  // Destroy the player instance
-            room_goto(rm_menu);  // Go to the menu room
-            game_restart();      // Restart the game
+
+// Define um temporizador para restaurar a velocidade normal depois de um tempo
+alarm[0] = room_speed * 3; // Dura 3 segundos o efeito de slow motion
+         //  room_goto(rm_menu);  // Go to the menu room
+           // game_restart();      // Restart the game
         }
     }
 }

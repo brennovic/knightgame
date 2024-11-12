@@ -96,7 +96,7 @@ if (xMove != 0 || yMove != 0) {
 // No evento Step do objeto oPlayer
 if (timer_active) {
     // Incrementa o tempo decorrido em segundos
-    time_elapsed += delta_time / 1000000;
+   time_elapsed += delta_time / 1000000;
 
     // A cada segundo completo, subtrai a penalidade da pontuação
     if (floor(time_elapsed) > floor(time_elapsed - delta_time / 1000000)) {
@@ -109,3 +109,13 @@ if (timer_active) {
     }
 }
 
+
+
+if (dialogo_ativo && mouse_check_button_pressed(mb_right)) {
+    indice_dialogo += 1; // Avança para a próxima mensagem
+
+    // Verifica se todas as mensagens foram exibidas
+    if (indice_dialogo >= array_length(mensagens_dialogo)) {
+        dialogo_ativo = false; // Fecha o diálogo se todas as mensagens foram mostradas
+    }
+}

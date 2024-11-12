@@ -28,8 +28,8 @@
   "resourceVersion":"2.0",
   "solid":false,
   "spriteId":{
-    "name":"S_Key",
-    "path":"sprites/S_Key/S_Key.yy",
+    "name":"tile_0796",
+    "path":"sprites/tile_0796/tile_0796.yy",
   },
   "spriteMaskId":null,
   "visible":true,

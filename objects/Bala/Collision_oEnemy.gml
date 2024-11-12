@@ -6,7 +6,7 @@ with (other) {
     if (vida <= 0) {
 		audio_play_sound(som_dano2, 1, false);
         score += 30;  
-
+         part_particles_create(global.particle_system, x, y, global.particle_explosion, 10);
         instance_destroy(); // Destroi o inimigo
     }
 }

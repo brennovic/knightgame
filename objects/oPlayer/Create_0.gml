@@ -1,5 +1,5 @@
 spd = 3;
-
+show_score_window = false
 global.life = 4
 slide_speed = 8; 
 slide_friction = 0.95; 
@@ -15,6 +15,13 @@ global.enemy_kills = 0;
 run_sprite = run_1;  
 idle_sprite = idle_1; 
 slide_sprite = slide;  
+
+flash_timer = 0;
+
+dialogo_ativo = false; // Indica se o diálogo está ativo
+mensagens_dialogo = []; // Array que armazena as mensagens do diálogo
+indice_dialogo = 0; // Índice da mensagem atual
+
 
 
 global.player_collided_with_floor = false;
@@ -70,4 +77,4 @@ score = 100;
 time_elapsed = 0;
 time_penalty = 1;
 timer_active = true;
-show_score_window = false;  // Flag para exibir a janela de pontuação
+

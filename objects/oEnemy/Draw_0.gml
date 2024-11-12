@@ -22,7 +22,7 @@ draw_rectangle(x_barra, y_barra, x_barra + (largura_barra * porcentagem_vida), y
 
 
 
-// Evento Draw do inimigo
+
 
 if (flash_timer > 0) {
     // Ativa o efeito de fog para flash branco

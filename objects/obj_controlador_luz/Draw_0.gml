@@ -3,7 +3,7 @@ if(!surface_exists(surf)){
 }else{
 	surface_set_target(surf) 
 	
-	draw_clear_alpha(c_black,.5)
+	draw_clear_alpha(c_black,.3)
 	
 	with(obj_luz){
 		

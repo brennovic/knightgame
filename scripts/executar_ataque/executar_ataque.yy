@@ -1,0 +1,13 @@
+{
+  "$GMScript":"",
+  "%Name":"executar_ataque",
+  "isCompatibility":false,
+  "isDnD":false,
+  "name":"executar_ataque",
+  "parent":{
+    "name":"Scripts",
+    "path":"folders/Scripts.yy",
+  },
+  "resourceType":"GMScript",
+  "resourceVersion":"2.0",
+}

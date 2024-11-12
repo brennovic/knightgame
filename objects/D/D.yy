@@ -28,8 +28,8 @@
   "resourceVersion":"2.0",
   "solid":false,
   "spriteId":{
-    "name":"D_Key",
-    "path":"sprites/D_Key/D_Key.yy",
+    "name":"tile_0321",
+    "path":"sprites/tile_0321/tile_0321.yy",
   },
   "spriteMaskId":null,
   "visible":true,

@@ -28,8 +28,8 @@
   "resourceVersion":"2.0",
   "solid":false,
   "spriteId":{
-    "name":"idle_back",
-    "path":"sprites/idle_back/idle_back.yy",
+    "name":"slide",
+    "path":"sprites/slide/slide.yy",
   },
   "spriteMaskId":null,
   "visible":true,

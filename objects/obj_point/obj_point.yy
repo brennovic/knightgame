@@ -1,7 +1,10 @@
 {
   "$GMObject":"",
   "%Name":"obj_point",
-  "eventList":[],
+  "eventList":[
+    {"$GMEvent":"","%Name":"","collisionObjectId":null,"eventNum":0,"eventType":0,"isDnD":false,"name":"","resourceType":"GMEvent","resourceVersion":"2.0",},
+    {"$GMEvent":"","%Name":"","collisionObjectId":{"name":"oPlayer","path":"objects/oPlayer/oPlayer.yy",},"eventNum":0,"eventType":4,"isDnD":false,"name":"","resourceType":"GMEvent","resourceVersion":"2.0",},
+  ],
   "managed":true,
   "name":"obj_point",
   "overriddenProperties":[],
@@ -31,11 +34,11 @@
   "properties":[],
   "resourceType":"GMObject",
   "resourceVersion":"2.0",
-  "solid":false,
+  "solid":true,
   "spriteId":{
-    "name":"Bulletw",
-    "path":"sprites/Bulletw/Bulletw.yy",
+    "name":"Dungeon_Tileset_2",
+    "path":"sprites/Dungeon_Tileset_2/Dungeon_Tileset_2.yy",
   },
   "spriteMaskId":null,
-  "visible":false,
+  "visible":true,
 }

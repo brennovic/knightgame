@@ -1,7 +1,10 @@
 {
   "$GMObject":"",
   "%Name":"Space",
-  "eventList":[],
+  "eventList":[
+    {"$GMEvent":"","%Name":"","collisionObjectId":null,"eventNum":32,"eventType":9,"isDnD":false,"name":"","resourceType":"GMEvent","resourceVersion":"2.0",},
+    {"$GMEvent":"","%Name":"","collisionObjectId":null,"eventNum":0,"eventType":3,"isDnD":false,"name":"","resourceType":"GMEvent","resourceVersion":"2.0",},
+  ],
   "managed":true,
   "name":"Space",
   "overriddenProperties":[],
@@ -28,8 +31,8 @@
   "resourceVersion":"2.0",
   "solid":false,
   "spriteId":{
-    "name":"Space_Key",
-    "path":"sprites/Space_Key/Space_Key.yy",
+    "name":"tile_0253",
+    "path":"sprites/tile_0253/tile_0253.yy",
   },
   "spriteMaskId":null,
   "visible":true,
